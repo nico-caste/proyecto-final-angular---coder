@@ -12,7 +12,8 @@
         "C3",
         "C5",
         "C2",
-        "C4"
+        "C4",
+        "C6"
       ]
     },
     {
@@ -52,7 +53,9 @@
       "nac": "2001-05-30",
       "loc": "Mendoza",
       "inscr": [
-        "C2"
+        "C2",
+        "C1",
+        "C5"
       ]
     },
     {
@@ -79,7 +82,8 @@
       "loc": "San Juan",
       "inscr": [
         "C3",
-        "C2"
+        "C2",
+        "C1"
       ]
     },
     {
@@ -91,7 +95,8 @@
       "nac": "1992-04-25",
       "loc": "Tucumán",
       "inscr": [
-        "C5"
+        "C5",
+        "C6"
       ]
     },
     {
@@ -102,7 +107,9 @@
       "dni": 33456789,
       "nac": "1999-08-17",
       "loc": "Salta",
-      "inscr": []
+      "inscr": [
+        "C4"
+      ]
     },
     {
       "id": "A9",
@@ -135,7 +142,11 @@
       "nac": "1990-10-05",
       "loc": "Neuquén",
       "id": "A11",
-      "role": "user"
+      "role": "user",
+      "inscr": [
+        "C4",
+        "C5"
+      ]
     },
     {
       "id": "A12",
@@ -145,7 +156,11 @@
       "dni": 34567890,
       "nac": "2000-01-28",
       "loc": "Chaco",
-      "inscr": []
+      "inscr": [
+        "C5",
+        "C3",
+        "C4"
+      ]
     },
     {
       "id": "A13",
@@ -234,7 +249,9 @@
       "dni": 30789012,
       "nac": "1994-08-13",
       "loc": "Mar del Plata",
-      "inscr": []
+      "inscr": [
+        "C1"
+      ]
     }
   ],
   "courses": [
@@ -245,7 +262,10 @@
       "req": "Sin requisitos",
       "dur": 8,
       "inscr": [
-        "A5"
+        "A5",
+        "A6",
+        "A4",
+        "A20"
       ]
     },
     {
@@ -276,7 +296,8 @@
         "A19",
         "A5",
         "A18",
-        "A9"
+        "A9",
+        "A12"
       ]
     },
     {
@@ -288,7 +309,10 @@
       "inscr": [
         "A2",
         "A3",
-        "A1"
+        "A1",
+        "A8",
+        "A12",
+        "A11"
       ]
     },
     {
@@ -302,7 +326,10 @@
         "A3",
         "A7",
         "A19",
-        "A17"
+        "A17",
+        "A12",
+        "A11",
+        "A4"
       ]
     },
     {
@@ -312,8 +339,17 @@
       "req": "HTML - CSS - JavaScript",
       "dur": 22,
       "inscr": [
-        "A9"
+        "A9",
+        "A1",
+        "A7"
       ]
+    },
+    {
+      "id": "34f3",
+      "titulo": "test",
+      "descr": "curso test",
+      "req": "sin",
+      "dur": "21"
     }
   ],
   "users": [
@@ -347,141 +383,6 @@
       "studentName": "Martín Torres",
       "courseName": "",
       "date": "2025-06-17T02:03:34.998Z",
-      "type": "INSCRIPTION"
-    },
-    {
-      "id": "1750125815017",
-      "studentId": "A9",
-      "courseId": "C3",
-      "studentName": "",
-      "courseName": "JavaScript",
-      "date": "2025-06-17T02:03:35.017Z",
-      "type": "INSCRIPTION"
-    },
-    {
-      "id": "1750125816942",
-      "studentId": "A9",
-      "courseId": "C6",
-      "studentName": "Martín Torres",
-      "courseName": "",
-      "date": "2025-06-17T02:03:36.942Z",
-      "type": "INSCRIPTION"
-    },
-    {
-      "id": "1750125816957",
-      "studentId": "A9",
-      "courseId": "C6",
-      "studentName": "",
-      "courseName": "Vue JS",
-      "date": "2025-06-17T02:03:36.957Z",
-      "type": "INSCRIPTION"
-    },
-    {
-      "id": "1750126907534",
-      "studentId": "A1",
-      "courseId": "C4",
-      "studentName": "Carlos García",
-      "courseName": "",
-      "date": "2025-06-17T02:21:47.534Z",
-      "type": "INSCRIPTION"
-    },
-    {
-      "id": "1750126907545",
-      "studentId": "A1",
-      "courseId": "C4",
-      "studentName": "",
-      "courseName": "React JS",
-      "date": "2025-06-17T02:21:47.545Z",
-      "type": "INSCRIPTION"
-    },
-    {
-      "id": "1750126980060",
-      "studentId": "A7",
-      "courseId": "C5",
-      "studentName": "",
-      "courseName": "Angular",
-      "date": "2025-06-17T02:23:00.060Z",
-      "type": "INSCRIPTION"
-    },
-    {
-      "id": "1750126980071",
-      "studentId": "A7",
-      "courseId": "C5",
-      "studentName": "Diego Pérez",
-      "courseName": "",
-      "date": "2025-06-17T02:23:00.071Z",
-      "type": "INSCRIPTION"
-    },
-    {
-      "id": "1750126982927",
-      "studentId": "A19",
-      "courseId": "C5",
-      "studentName": "",
-      "courseName": "Angular",
-      "date": "2025-06-17T02:23:02.927Z",
-      "type": "INSCRIPTION"
-    },
-    {
-      "id": "1750126982935",
-      "studentId": "A19",
-      "courseId": "C5",
-      "studentName": "Gabriel Herrera",
-      "courseName": "",
-      "date": "2025-06-17T02:23:02.935Z",
-      "type": "INSCRIPTION"
-    },
-    {
-      "id": "1750128270952",
-      "studentId": "A5",
-      "courseId": "C1",
-      "studentName": "",
-      "courseName": "HTML y CSS",
-      "date": "2025-06-17T02:44:30.952Z",
-      "type": "INSCRIPTION"
-    },
-    {
-      "id": "1750128270968",
-      "studentId": "A5",
-      "courseId": "C1",
-      "studentName": "Juan Fernández",
-      "courseName": "",
-      "date": "2025-06-17T02:44:30.968Z",
-      "type": "INSCRIPTION"
-    },
-    {
-      "id": "1750128276293",
-      "studentId": "A17",
-      "courseId": "C5",
-      "studentName": "Alejandro Medina",
-      "courseName": "",
-      "date": "2025-06-17T02:44:36.293Z",
-      "type": "INSCRIPTION"
-    },
-    {
-      "id": "1750128276307",
-      "studentId": "A17",
-      "courseId": "C5",
-      "studentName": "",
-      "courseName": "Angular",
-      "date": "2025-06-17T02:44:36.307Z",
-      "type": "INSCRIPTION"
-    },
-    {
-      "id": "1750128277859",
-      "studentId": "A17",
-      "courseId": "C2",
-      "studentName": "Alejandro Medina",
-      "courseName": "",
-      "date": "2025-06-17T02:44:37.859Z",
-      "type": "INSCRIPTION"
-    },
-    {
-      "id": "1750128277873",
-      "studentId": "A17",
-      "courseId": "C2",
-      "studentName": "",
-      "courseName": "TypeScript",
-      "date": "2025-06-17T02:44:37.873Z",
       "type": "INSCRIPTION"
     }
   ]

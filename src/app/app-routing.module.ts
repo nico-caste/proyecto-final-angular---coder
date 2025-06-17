@@ -16,6 +16,7 @@ const routes: Routes = [
   component: AuthComponent,
   loadChildren:()=> import('./modules/components/auth/auth.module').then((m)=>m.AuthModule)
 },
+{path:'**', redirectTo:'dashboard'}
 ];
 
 @NgModule({
