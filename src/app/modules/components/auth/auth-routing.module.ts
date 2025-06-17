@@ -1,0 +1,24 @@
+import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
+
+const routes: Routes = [
+  {
+    path: 'register', component: RegisterComponent,
+    loadChildren:()=> import('./register/register.module')
+    .then((m)=>m.RegisterModule)
+  },
+  {
+    path: 'login', component: LoginComponent,
+    loadChildren:()=> import('./login/login.module')
+    .then((m)=>m.LoginModule)
+  },
+  {path: '**', redirectTo: 'login' }
+];
+
+@NgModule({
+  imports: [RouterModule.forChild(routes)],
+  exports: [RouterModule]
+})
+export class AuthRoutingModule { }

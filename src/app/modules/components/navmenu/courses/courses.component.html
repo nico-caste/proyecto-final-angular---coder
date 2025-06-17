@@ -1,0 +1,97 @@
+<div class="div-form-container">
+
+    <mat-card *ngIf="(authUser$ | async)?.role === 'admin'" class="add-user-form">
+        <mat-card-header>
+            <mat-card-title>Agregar Curso</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <form [formGroup]="cursoForm" (ngSubmit)="addCurso()">
+                <mat-form-field appearance="outline">
+                    <mat-label>Titulo</mat-label>
+                    <input matInput formControlName="titulo">
+                </mat-form-field>
+            
+                <mat-form-field appearance="outline">
+                    <mat-label>Duracion(semanas)</mat-label>
+                    <input matInput formControlName="dur">
+                </mat-form-field>
+            
+                <mat-form-field appearance="outline">
+                    <mat-label>Descripcion</mat-label>
+                    <input matInput type="text" formControlName="descr">
+                </mat-form-field>
+
+                <mat-form-field appearance="outline">
+                    <mat-label>Requisitos</mat-label>
+                    <input matInput type="text" formControlName="req">
+                </mat-form-field>
+            
+                <button mat-raised-button color="primary" type="submit" [disabled]="!cursoForm.  valid">
+                    Agregar Curso
+                </button>
+            </form>
+        </mat-card-content>
+    </mat-card>
+    
+    <div class="div-card">
+        <div class="card" style="width: 18rem;" *ngFor="let curso of dataSource.data">
+            <div class="card-body">
+                <h5 class="card-title" >{{curso?.titulo}}</h5>
+                <p class="card-text">Duracion: {{curso?.dur}} semanas</p>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">Descripcion: {{curso?.descr}}</li>
+                <li class="list-group-item">Requisitos: {{curso?.req}}</li>
+            </ul>
+            <div class="card-body">
+                <button *ngIf="(authUser$ | async)?.role === 'admin'" mat-button color="primary" (click)="editCurso(curso.id)">
+                    <mat-icon>edit</mat-icon>EDITAR
+                </button>
+                <button *ngIf="(authUser$ | async)?.role === 'admin'" mat-button color="warn" (click)="deleteCurso(curso.id)">
+                    <mat-icon>delete</mat-icon>ELIMINAR
+                </button>
+                <button mat-button color="warn" [routerLink]="curso.id">
+                    <mat-icon>visibility</mat-icon>VER DETALLE
+                </button>
+            </div>
+        </div>
+        <div class="edit-form-overlay" *ngIf="isEditing">
+            <div class="edit-form-container">
+                <form [formGroup]="cursoForm" (ngSubmit)="saveCurso()">
+                    <h3>Editar Curso</h3>
+                
+                    <mat-form-field appearance="fill">
+                        <mat-label>Titulo</mat-label>
+                        <input matInput formControlName="titulo">
+                    </mat-form-field>
+
+                    <mat-form-field appearance="fill">
+                        <mat-label>Duracion(semanas)</mat-label>
+                        <input matInput type="number" formControlName="dur">
+                    </mat-form-field>
+
+                    
+                    <mat-form-field appearance="fill">
+                        <mat-label>Descripcion</mat-label>
+                        <input matInput type="text" formControlName="descr">
+                    </mat-form-field>
+                    
+                    <mat-form-field appearance="fill">
+                        <mat-label>Requisitos</mat-label>
+                        <input matInput type="text" formControlName="req">
+                    </mat-form-field>
+
+                    <div class="form-actions">
+                        <button mat-raised-button color="primary" type="submit">
+                            Guardar
+                        </button>
+                        <button mat-button type="button" (click)="resetForm()">
+                            Cancelar
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+</div>

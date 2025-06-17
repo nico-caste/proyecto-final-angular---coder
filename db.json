@@ -1,0 +1,488 @@
+{
+  "students": [
+    {
+      "id": "A1",
+      "name": "Carlos",
+      "lastName": "García",
+      "age": 25,
+      "dni": 32456789,
+      "nac": "1998-03-15",
+      "loc": "Buenos Aires",
+      "inscr": [
+        "C3",
+        "C5",
+        "C2",
+        "C4"
+      ]
+    },
+    {
+      "name": "Ana",
+      "lastName": "Martínez",
+      "dni": 28901234,
+      "age": 32,
+      "nac": "1993-07-22",
+      "loc": "Córdoba",
+      "id": "A2",
+      "inscr": [
+        "C2",
+        "C3",
+        "C4"
+      ]
+    },
+    {
+      "id": "A3",
+      "name": "Luis",
+      "lastName": "Rodríguez",
+      "age": 28,
+      "dni": 30567891,
+      "nac": "1995-11-08",
+      "loc": "Rosario",
+      "inscr": [
+        "C2",
+        "C5",
+        "C4"
+      ]
+    },
+    {
+      "id": "A4",
+      "name": "María",
+      "lastName": "López",
+      "age": 22,
+      "dni": 35678912,
+      "nac": "2001-05-30",
+      "loc": "Mendoza",
+      "inscr": [
+        "C2"
+      ]
+    },
+    {
+      "id": "A5",
+      "name": "Juan",
+      "lastName": "Fernández",
+      "age": 35,
+      "dni": 27345678,
+      "nac": "1988-12-03",
+      "loc": "La Plata",
+      "inscr": [
+        "C3",
+        "C2",
+        "C1"
+      ]
+    },
+    {
+      "id": "A6",
+      "name": "Laura",
+      "lastName": "Sánchez",
+      "age": 27,
+      "dni": 31234567,
+      "nac": "1996-09-14",
+      "loc": "San Juan",
+      "inscr": [
+        "C3",
+        "C2"
+      ]
+    },
+    {
+      "id": "A7",
+      "name": "Diego",
+      "lastName": "Pérez",
+      "age": 31,
+      "dni": 29876543,
+      "nac": "1992-04-25",
+      "loc": "Tucumán",
+      "inscr": [
+        "C5"
+      ]
+    },
+    {
+      "id": "A8",
+      "name": "Sofía",
+      "lastName": "González",
+      "age": 24,
+      "dni": 33456789,
+      "nac": "1999-08-17",
+      "loc": "Salta",
+      "inscr": []
+    },
+    {
+      "id": "A9",
+      "name": "Martín",
+      "lastName": "Torres",
+      "age": 29,
+      "dni": 30123456,
+      "nac": "1994-02-11",
+      "loc": "Santa Fe",
+      "inscr": [
+        "C3",
+        "C6"
+      ]
+    },
+    {
+      "name": "Valentina",
+      "lastName": "Díaz",
+      "dni": 32123456,
+      "age": 33,
+      "nac": "1997-06-20",
+      "loc": "San Luis",
+      "id": "A10",
+      "role": "user"
+    },
+    {
+      "name": "Pablo",
+      "lastName": "Romero",
+      "dni": 28234567,
+      "age": 31,
+      "nac": "1990-10-05",
+      "loc": "Neuquén",
+      "id": "A11",
+      "role": "user"
+    },
+    {
+      "id": "A12",
+      "name": "Julia",
+      "lastName": "Castro",
+      "age": 23,
+      "dni": 34567890,
+      "nac": "2000-01-28",
+      "loc": "Chaco",
+      "inscr": []
+    },
+    {
+      "id": "A13",
+      "name": "Federico",
+      "lastName": "Morales",
+      "age": 32,
+      "dni": 29345678,
+      "nac": "1991-07-09",
+      "loc": "Entre Ríos",
+      "inscr": []
+    },
+    {
+      "id": "A14",
+      "name": "Lucía",
+      "lastName": "Ruiz",
+      "age": 28,
+      "dni": 31678901,
+      "nac": "1995-03-12",
+      "loc": "Jujuy",
+      "inscr": []
+    },
+    {
+      "id": "A15",
+      "name": "Matías",
+      "lastName": "Silva",
+      "age": 34,
+      "dni": 27890123,
+      "nac": "1989-11-24",
+      "loc": "Formosa",
+      "inscr": []
+    },
+    {
+      "id": "A16",
+      "name": "Carolina",
+      "lastName": "Acosta",
+      "age": 25,
+      "dni": 32890123,
+      "nac": "1998-05-16",
+      "loc": "Catamarca",
+      "inscr": []
+    },
+    {
+      "id": "A17",
+      "name": "Alejandro",
+      "lastName": "Medina",
+      "age": 30,
+      "dni": 29567890,
+      "nac": "1993-09-07",
+      "loc": "La Rioja",
+      "inscr": [
+        "C5",
+        "C2"
+      ]
+    },
+    {
+      "id": "A18",
+      "name": "Daniela",
+      "lastName": "Flores",
+      "age": 27,
+      "dni": 31234568,
+      "nac": "1996-12-19",
+      "loc": "San Rafael",
+      "inscr": [
+        "C3",
+        "C2"
+      ]
+    },
+    {
+      "id": "A19",
+      "name": "Gabriel",
+      "lastName": "Herrera",
+      "age": 31,
+      "dni": 29012345,
+      "nac": "1992-02-28",
+      "loc": "Bariloche",
+      "inscr": [
+        "C3",
+        "C5"
+      ]
+    },
+    {
+      "id": "A20",
+      "name": "Paula",
+      "lastName": "Molina",
+      "age": 29,
+      "dni": 30789012,
+      "nac": "1994-08-13",
+      "loc": "Mar del Plata",
+      "inscr": []
+    }
+  ],
+  "courses": [
+    {
+      "id": "C1",
+      "titulo": "HTML y CSS",
+      "descr": "introduccion y avanzado",
+      "req": "Sin requisitos",
+      "dur": 8,
+      "inscr": [
+        "A5"
+      ]
+    },
+    {
+      "id": "C2",
+      "titulo": "TypeScript",
+      "descr": "introduccion y avanzado",
+      "req": "HTML - CSS",
+      "dur": 14,
+      "inscr": [
+        "A2",
+        "A6",
+        "A18",
+        "A1",
+        "A3",
+        "A4",
+        "A5",
+        "A17"
+      ]
+    },
+    {
+      "titulo": "JavaScript",
+      "descr": "introduccion y avanzado",
+      "req": "HTML - CSS",
+      "dur": 13,
+      "id": "C3",
+      "inscr": [
+        "A2",
+        "A19",
+        "A5",
+        "A18",
+        "A9"
+      ]
+    },
+    {
+      "id": "C4",
+      "titulo": "React JS",
+      "descr": "introduccion y avanzado",
+      "req": "HTML - CSS - Javascript",
+      "dur": 16,
+      "inscr": [
+        "A2",
+        "A3",
+        "A1"
+      ]
+    },
+    {
+      "id": "C5",
+      "titulo": "Angular",
+      "descr": "introduccion y avanzado",
+      "req": "HTML - CSS - TypeScript",
+      "dur": 19,
+      "inscr": [
+        "A1",
+        "A3",
+        "A7",
+        "A19",
+        "A17"
+      ]
+    },
+    {
+      "id": "C6",
+      "titulo": "Vue JS",
+      "descr": "introduccion y avanzado",
+      "req": "HTML - CSS - JavaScript",
+      "dur": 22,
+      "inscr": [
+        "A9"
+      ]
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "name": "fake",
+      "pass": "4321",
+      "role": "admin",
+      "token": "admin-4321"
+    },
+    {
+      "id": "71de",
+      "name": "user2",
+      "role": "user",
+      "pass": "1234",
+      "token": "user-0918"
+    },
+    {
+      "id": "9d2e",
+      "name": "user1",
+      "role": "user",
+      "pass": "1234",
+      "token": "user-1843"
+    }
+  ],
+  "inscription-history": [
+    {
+      "id": "1750125814998",
+      "studentId": "A9",
+      "courseId": "C3",
+      "studentName": "Martín Torres",
+      "courseName": "",
+      "date": "2025-06-17T02:03:34.998Z",
+      "type": "INSCRIPTION"
+    },
+    {
+      "id": "1750125815017",
+      "studentId": "A9",
+      "courseId": "C3",
+      "studentName": "",
+      "courseName": "JavaScript",
+      "date": "2025-06-17T02:03:35.017Z",
+      "type": "INSCRIPTION"
+    },
+    {
+      "id": "1750125816942",
+      "studentId": "A9",
+      "courseId": "C6",
+      "studentName": "Martín Torres",
+      "courseName": "",
+      "date": "2025-06-17T02:03:36.942Z",
+      "type": "INSCRIPTION"
+    },
+    {
+      "id": "1750125816957",
+      "studentId": "A9",
+      "courseId": "C6",
+      "studentName": "",
+      "courseName": "Vue JS",
+      "date": "2025-06-17T02:03:36.957Z",
+      "type": "INSCRIPTION"
+    },
+    {
+      "id": "1750126907534",
+      "studentId": "A1",
+      "courseId": "C4",
+      "studentName": "Carlos García",
+      "courseName": "",
+      "date": "2025-06-17T02:21:47.534Z",
+      "type": "INSCRIPTION"
+    },
+    {
+      "id": "1750126907545",
+      "studentId": "A1",
+      "courseId": "C4",
+      "studentName": "",
+      "courseName": "React JS",
+      "date": "2025-06-17T02:21:47.545Z",
+      "type": "INSCRIPTION"
+    },
+    {
+      "id": "1750126980060",
+      "studentId": "A7",
+      "courseId": "C5",
+      "studentName": "",
+      "courseName": "Angular",
+      "date": "2025-06-17T02:23:00.060Z",
+      "type": "INSCRIPTION"
+    },
+    {
+      "id": "1750126980071",
+      "studentId": "A7",
+      "courseId": "C5",
+      "studentName": "Diego Pérez",
+      "courseName": "",
+      "date": "2025-06-17T02:23:00.071Z",
+      "type": "INSCRIPTION"
+    },
+    {
+      "id": "1750126982927",
+      "studentId": "A19",
+      "courseId": "C5",
+      "studentName": "",
+      "courseName": "Angular",
+      "date": "2025-06-17T02:23:02.927Z",
+      "type": "INSCRIPTION"
+    },
+    {
+      "id": "1750126982935",
+      "studentId": "A19",
+      "courseId": "C5",
+      "studentName": "Gabriel Herrera",
+      "courseName": "",
+      "date": "2025-06-17T02:23:02.935Z",
+      "type": "INSCRIPTION"
+    },
+    {
+      "id": "1750128270952",
+      "studentId": "A5",
+      "courseId": "C1",
+      "studentName": "",
+      "courseName": "HTML y CSS",
+      "date": "2025-06-17T02:44:30.952Z",
+      "type": "INSCRIPTION"
+    },
+    {
+      "id": "1750128270968",
+      "studentId": "A5",
+      "courseId": "C1",
+      "studentName": "Juan Fernández",
+      "courseName": "",
+      "date": "2025-06-17T02:44:30.968Z",
+      "type": "INSCRIPTION"
+    },
+    {
+      "id": "1750128276293",
+      "studentId": "A17",
+      "courseId": "C5",
+      "studentName": "Alejandro Medina",
+      "courseName": "",
+      "date": "2025-06-17T02:44:36.293Z",
+      "type": "INSCRIPTION"
+    },
+    {
+      "id": "1750128276307",
+      "studentId": "A17",
+      "courseId": "C5",
+      "studentName": "",
+      "courseName": "Angular",
+      "date": "2025-06-17T02:44:36.307Z",
+      "type": "INSCRIPTION"
+    },
+    {
+      "id": "1750128277859",
+      "studentId": "A17",
+      "courseId": "C2",
+      "studentName": "Alejandro Medina",
+      "courseName": "",
+      "date": "2025-06-17T02:44:37.859Z",
+      "type": "INSCRIPTION"
+    },
+    {
+      "id": "1750128277873",
+      "studentId": "A17",
+      "courseId": "C2",
+      "studentName": "",
+      "courseName": "TypeScript",
+      "date": "2025-06-17T02:44:37.873Z",
+      "type": "INSCRIPTION"
+    }
+  ]
+}

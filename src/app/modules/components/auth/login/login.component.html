@@ -1,0 +1,16 @@
+<form [formGroup]="loginForm" class="grid formgrid">
+  <div class="col-12">
+    <h1>Iniciar sesión</h1>
+  </div>
+  <mat-form-field class="col-12">
+    <mat-label>Nombre</mat-label>
+    <input formControlName="name" matInput />
+  </mat-form-field>
+  <mat-form-field class="col-12">
+    <mat-label>Contraseña</mat-label>
+    <input formControlName="pass" matInput />
+  </mat-form-field>
+  <div class="col-12 d-flex justify-content-end">
+    <button (click)="login()" mat-raised-button color="primary" type="button">Iniciar sesión</button>
+  </div>
+</form>

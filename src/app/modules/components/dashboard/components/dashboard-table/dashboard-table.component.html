@@ -1,0 +1,33 @@
+<div class="dashboard-container">
+  <div class="summary-cards">
+    <mat-card class="summary-card">
+      <mat-card-header>
+        <mat-card-title>Total Alumnos</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <h2>{{ totalStudents }}</h2>
+      </mat-card-content>
+    </mat-card>
+
+    <mat-card class="summary-card">
+      <mat-card-header>
+        <mat-card-title>Total Cursos</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <h2>{{ totalCourses }}</h2>
+      </mat-card-content>
+    </mat-card>
+  </div>
+
+
+  <div *ngIf="(authUser$ | async)?.role === 'admin'" class="history-container">
+    <h2>Historial de Inscripciones</h2>
+    <mat-list>
+      <mat-list-item *ngFor="let item of history$ | async">
+        <span>{{ item.studentName }} se inscribió en {{ item.courseName }}</span>
+        <small>(Inscripción realizada por usuario ID: {{ item.userId }})</small>
+        <span class="date">{{ item.date | date:'short' }}</span>
+      </mat-list-item>
+    </mat-list>
+  </div>
+</div>

@@ -1,0 +1,44 @@
+.student-detail {
+  padding: 20px;
+
+  .student-info {
+    max-width: 600px;
+    margin: 20px 0;
+  }
+
+  .inscriptions {
+    margin-top: 20px;
+    
+    .checkbox-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .checkbox-item {
+      display: flex;
+      align-items: center;
+      
+      label {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        cursor: pointer;
+      }
+
+      input[type="checkbox"] {
+        margin: 0;
+      }
+    }
+  }
+}
+
+.loading, .error {
+  padding: 20px;
+  text-align: center;
+}
+
+.error {
+  color: red;
+}

@@ -1,0 +1,54 @@
+<div class="alumno-detail">
+  <ng-container *ngIf="!loading; else loadingTemplate">
+    <div *ngIf="alumno; else errorTemplate">
+      <h2>Detalle del alumno</h2>
+      <div class="alumno-info">
+        <p><strong>ID:</strong> {{alumno.id}}</p>
+        <p><strong>Nombre:</strong> {{alumno.name}}</p>
+        <p><strong>Apellido:</strong> {{alumno.lastName}}</p>
+        <p><strong>DNI:</strong> {{alumno.dni}}</p>
+        <p><strong>Edad:</strong> {{alumno.age}}</p>
+        <p><strong>Fecha de nacimiento:</strong> {{alumno.nac}}</p>
+        <p><strong>Localidad:</strong> {{alumno.loc}}</p>
+        
+        <div class="inscriptions">
+          <h3>Inscripciones</h3>
+                      <ul>
+              <li *ngFor="let cursoId of alumno.inscr">
+                {{ (cursos | find: cursoId)?.titulo }}
+              </li>
+            </ul>
+
+            <div class="inscripcion-form">
+              <h4>Inscribir nuevo alumno</h4>
+              <mat-form-field>
+                <mat-label>Seleccionar curso</mat-label>
+                  <mat-select [(ngModel)]="selectedCursoId">
+                    <mat-option *ngFor="let curso of cursosDisponibles" [value]="curso.id">
+                      {{curso.titulo}}
+                    </mat-option>
+                  </mat-select>
+              </mat-form-field>
+              <button mat-raised-button color="primary" 
+                [disabled]="!selectedCursoId"
+                (click)="inscribirCurso()">
+                Inscribir en Curso
+              </button>
+            </div>
+        </div>
+      </div>
+    </div>
+  </ng-container>
+</div>
+
+<ng-template #loadingTemplate>
+  <div class="loading">
+    Cargando detalles del alumno
+  </div>
+</ng-template>
+
+<ng-template #errorTemplate>
+  <div class="error">
+    No fue posible cargar los detalles del alumno
+  </div>
+</ng-template>
